@@ -366,9 +366,9 @@ function M.apply(c)
 
   HI(0, "DiffChanged", { fg = accent_amber })
   HI(0, "DiffText", { bg = surface_main, fg = diff_text, bold = true })
-  HI(0, "DiffAdded", { bg = surface_main, fg = diff_add })
+  HI(0, "DiffAdded", { bg = surface_main, fg = text_dim })
   HI(0, "DiffFile", { bg = surface_main, fg = accent_orange })
-  HI(0, "DiffNewFile", { bg = surface_main, fg = diff_add })
+  HI(0, "DiffNewFile", { bg = surface_main, fg = text_dim })
   HI(0, "DiffLine", { bg = surface_main, fg = diff_change })
   HI(0, "DiffRemoved", { bg = surface_main, fg = diff_delete })
 
@@ -393,13 +393,13 @@ function M.apply(c)
   HI(0, "GitGutterDelete", { bg = surface_main, fg = accent_orange })
   HI(0, "GitGutterChangeDelete", { bg = surface_main, fg = accent_rose })
 
-  HI(0, "GitSignsAdd", { fg = diff_add, bg = NONE })
+  HI(0, "GitSignsAdd", { fg = text_dim, bg = NONE })
   HI(0, "GitSignsChange", { fg = diff_change, bg = NONE })
   HI(0, "GitSignsDelete", { fg = accent_red_deep, bg = NONE })
   HI(0, "GitSignsTopdelete", { fg = accent_red_deep, bg = NONE })
   HI(0, "GitSignsChangedelete", { fg = diff_change, bg = NONE })
 
-  HI(0, "MiniDiffSignAdd", { fg = diff_add, bg = NONE })
+  HI(0, "MiniDiffSignAdd", { fg = text_dim, bg = NONE })
   HI(0, "MiniDiffSignChange", { fg = diff_change, bg = NONE })
   HI(0, "MiniDiffSignDelete", { fg = accent_red_deep, bg = NONE })
 
@@ -1078,22 +1078,22 @@ function M.apply(c)
   -- FINAL DIFF / NEOGIT OVERRIDES (AUTHORITATIVE)
   -- ============================================================
 
-  HI(0, "DiffAdd", { bg = surface_main, fg = diff_add })
+  HI(0, "DiffAdd", { bg = surface_main, fg = text_dim })
   HI(0, "DiffDelete", { bg = surface_main, fg = diff_delete })
   HI(0, "DiffChange", { bg = surface_main, fg = diff_change })
   HI(0, "DiffText", { bg = surface_main, fg = diff_text, bold = true })
 
-  HI(0, "@text.diff.add", { bg = surface_main, fg = diff_add })
+  HI(0, "@text.diff.add", { bg = surface_main, fg = text_dim })
   HI(0, "@text.diff.delete", { bg = surface_main, fg = diff_delete })
 
-  HI(0, "DiffAdded", { bg = surface_main, fg = diff_add })
+  HI(0, "DiffAdded", { bg = surface_main, fg = text_dim })
   HI(0, "DiffRemoved", { bg = surface_main, fg = diff_delete })
   HI(0, "DiffFile", { bg = surface_main, fg = text_primary })
   HI(0, "DiffNewFile", { bg = surface_main, fg = diff_add })
   HI(0, "DiffLine", { bg = surface_main, fg = diff_change })
 
   HI(0, "NeogitDiffContext", { bg = surface_main, fg = text_primary })
-  HI(0, "NeogitDiffAdd", { bg = surface_main, fg = diff_add })
+  HI(0, "NeogitDiffAdd", { bg = surface_main, fg = text_dim })
   HI(0, "NeogitDiffDelete", { bg = surface_main, fg = diff_delete })
   HI(0, "NeogitCommitViewDescription", { bg = surface_main, fg = accent_magenta, bold = true })
 
@@ -1103,16 +1103,16 @@ function M.apply(c)
   HI(0, "NeogitFilePath", { bg = surface_main, fg = accent_yellow, bold = true })
 
   HI(0, "NeogitDiffDeletions", { bg = surface_main, fg = diff_delete, bold = false })
-  HI(0, "NeogitDiffAdditions", { bg = surface_main, fg = diff_add, bold = false })
+  HI(0, "NeogitDiffAdditions", { bg = surface_main, fg = text_dim, bold = false })
   HI(0, "NeogitDiffContextHighlight", { bg = surface_main, fg = text_primary, bold = false })
-  HI(0, "NeogitDiffAddHighlight", { bg = surface_main, fg = diff_add, bold = false })
+  HI(0, "NeogitDiffAddHighlight", { bg = surface_main, fg = text_dim, bold = false })
   HI(0, "NeogitDiffDeleteHighlight", { bg = surface_main, fg = diff_delete, bold = false })
 
   HI(0, "NeogitDiffContextCursor", { bg = neutral_2, fg = text_primary, bold = false })
   HI(0, "NeogitDiffAddCursor", { bg = neutral_2, fg = support_green, bold = false })
   HI(0, "NeogitDiffDeleteCursor", { bg = neutral_2, fg = support_red, bold = false })
 
-  HI(0, "NeogitChangeAdded", { fg = diff_add, bold = true })
+  HI(0, "NeogitChangeAdded", { fg = text_dim, bold = true })
   HI(0, "NeogitChangeModified", { fg = diff_change, bold = true })
   HI(0, "NeogitChangeDeleted", { fg = diff_delete, bold = true })
 
